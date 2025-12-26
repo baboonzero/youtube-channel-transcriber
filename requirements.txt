@@ -1,0 +1,20 @@
+# YouTube Channel Bulk Transcriber - Local GPU Requirements
+# For cloud/Modal transcription, see requirements-modal.txt
+
+# Core dependencies
+faster-whisper>=0.10.0  # GPU-accelerated Whisper (4x faster than openai-whisper)
+yt-dlp>=2023.12.30      # YouTube downloader
+torch>=2.0.0            # PyTorch (GPU support)
+
+# Note: PyTorch with CUDA support requires special installation
+# Install PyTorch with CUDA 12.x using:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# Or visit: https://pytorch.org/get-started/locally/
+
+# CUDA Runtime Required:
+# - Download CUDA 12.x from: https://developer.nvidia.com/cuda-downloads
+# - faster-whisper requires cuBLAS libraries from CUDA toolkit
+# - Verify installation: nvidia-smi
+
+# Optional but recommended
+requests>=2.31.0        # HTTP library (for cookie export)

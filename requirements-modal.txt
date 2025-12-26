@@ -1,0 +1,15 @@
+# YouTube Channel Bulk Transcriber - Modal Cloud Requirements
+# For local GPU transcription, see requirements.txt
+
+# Modal cloud platform
+modal>=0.55.0
+
+# Note: Modal dependencies are defined in scripts/modal_hybrid.py
+# The Modal image includes:
+#   - openai-whisper (not faster-whisper due to cuDNN incompatibility)
+#   - torch
+#   - torchaudio
+#   - ffmpeg
+
+# Local dependencies for orchestration
+yt-dlp>=2023.12.30  # For local downloads (hybrid approach)

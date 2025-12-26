@@ -1,0 +1,15 @@
+# YouTube Channel Bulk Transcriber - GPU Version
+# Install with: pip install -r requirements_gpu.txt
+
+# Core dependencies
+openai-whisper>=20231117
+yt-dlp>=2023.11.16
+torch>=2.0.0  # For GPU support
+torchaudio>=2.0.0
+
+# Audio processing
+ffmpeg-python>=0.2.0
+imageio-ffmpeg>=0.4.9
+
+# Utilities
+tqdm>=4.65.0
