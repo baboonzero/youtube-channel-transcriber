@@ -41,7 +41,8 @@
       "Bash(PYTHONIOENCODING=utf-8 modal run:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
