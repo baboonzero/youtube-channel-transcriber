@@ -57,6 +57,38 @@ This comprehensive guide will help you:
 
 ---
 
+## 📦 Installation
+
+### Automated Setup (Recommended)
+
+The easiest way to get started is with our interactive setup wizard:
+
+**Windows:**
+```cmd
+# Option 1: Double-click setup.bat
+# Option 2: Run in terminal
+python setup.py
+```
+
+**macOS/Linux:**
+```bash
+python3 setup.py
+```
+
+The wizard will:
+- ✅ Check Python version
+- ✅ Install dependencies based on your choice (Local GPU / Modal Cloud / Both)
+- ✅ Test GPU availability
+- ✅ Help setup Modal authentication
+- ✅ Create configuration file interactively
+- ✅ Guide you through everything step-by-step
+
+**Advanced users:** Use `python quick-setup.py` for minimal setup
+
+**Manual setup:** See [INSTALL.md](INSTALL.md) for complete instructions
+
+---
+
 ### Which Approach Should You Use?
 
 | Scenario | Recommended Approach | Why |
